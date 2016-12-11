@@ -1,3 +1,31 @@
+---
+title: "Codebook"
+date: "December 11, 2016"
+output: html_document
+---
+========
+Codebook was generated on 2014-10-26 16:04:20 during the same process that generated the dataset. See `run_analysis.md` or `run_analysis.html` for details on dataset creation.
+
+##Variable and descriptions
+###Subject
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+
+Variable name    | Description
+-----------------|------------
+subject          | ID of the 30 volunteers  who performed the activity. Its range is from 1 to 30.
+###Activity
+Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
+
+Variable name    | Description
+-----------------|------------
+activity         |  Activity type that the 30 volunteers  who performed the activity. 
+                 |  Its has 6 levels:
+                 |   1. WALKING
+                 |   2. WALKING_UPSTAIRS
+                 |   3. WALKING_DOWNSTAIRS
+                 |   4. SITTING
+                 |   5. STANDING
+                 |   6. LAYING
 
 **68 combined Variable name used in the dataset:**          
 --------------------------------
