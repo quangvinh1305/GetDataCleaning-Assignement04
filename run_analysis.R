@@ -56,6 +56,8 @@ run_analysis <- function(){
   Data<-subset(Data,select=selectedNames)
   #3. Uses descriptive activity names to name the activities in the data set
   activityLabels <- read.table(file.path(path_uci_har, "activity_labels.txt"),header = FALSE)
+  Data$activity<-factor(Data$activity);
+  Data$activity<- factor(Data$activity,labels=as.character(activityLabels$V2))
   #4. Appropriately labels the data set with descriptive variable names
   names(Data)<-gsub("^t", "Time", names(Data))
   names(Data)<-gsub("^f", "Frequency", names(Data))
